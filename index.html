@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+      <nav>
+          <ul class="menuItems">
+            <li id="home"><a href="#"><img src="./images/h1_logo.png" alt="logo" id="logo" height="23" width="117"></a></li>
+            <li ><a href='#'data-item='Products'>Products</a></li>
+            <li><a href='#' data-item='About'>About</a></li>           
+            <li><a href="#"data-item='Log in'>Log in</a></li>
+          </ul>
+        </nav>
+        <div class="wrapper">
+            <div class="blur-image">
+                <img src="./images/ct.jpg" alt="content">
+            </div>
+            <br>
+            <div class="center-div">
+                <button class="button">
+                    Ghost Button
+                    <div class="button__horizontal"></div>
+                    <div class="button__vertical"></div>
+                </button>
+            </div>
+            
+        </div>
+      
+      
+      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $( "#home" ).hover(
+      function() {
+        $('#logo').attr('src','./images/h1_logo_white.png');
+      }, function() {
+        $('#logo').attr('src','./images/h1_logo.png');
+      }
+    );
+    
+     </script>
+</body>
+</html>
